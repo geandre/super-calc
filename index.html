@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h3>SuperCalc</h3>
+    </header>
+
+    <main>
+        <h4 id="nome-operacao">SOMA</h4>
+
+        <input type="number" name="numero-x" id="numero-x">
+
+        <select name="operador" id="operador" onchange="set_nome_operacao()">
+            <option value="soma" selected> + </option>
+            <option value="subt"> - </option>
+            <option value="mult"> X </option>
+            <option value="divi"> / </option>
+            <option value="expo"> ^ </option>
+            <option value="fato"> ! </option>
+            <option value="raiz"> ²√ </option>
+        </select>
+
+        <input type="number" name="numero-y" id="numero-y">
+
+        <div id="resultado"></div>
+
+        <button onclick="calcula()">=</button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
