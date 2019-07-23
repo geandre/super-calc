@@ -4,8 +4,8 @@
   "background_color": "#e8e8e8",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/super-calc",
-  "start_url": "/super-calc",
+  "scope": "https://geandre.github.io/super-calc/",
+  "start_url": "https://geandre.github.io/super-calc/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
