@@ -12,12 +12,13 @@ const arquivos_offline = [
   './images/icons/icon-152x152.png',
   './images/icons/icon-192x192.png',
   './images/icons/icon-512x512.png',
+  'https://fonts.googleapis.com/css?family=Playball&display=swap',
 ];
 
 const nome_cache = 'pages-cache-v1';
 
 self.addEventListener('install', evento => {
-  console.log('Tentando instalar os arquivos offline');
+  // Tentando instalar os arquivos offline
   evento.waitUntil(
     caches.open(nome_cache)
     .then(cache => {
